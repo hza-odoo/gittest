@@ -1,0 +1,19 @@
+ssh hza@migration-t2.odoo.com  login in account
+
+{Download database}wget -O cytosurge.sql.gz https://upgrade.odoo.com/database/eu1/13766/iFuGb3VtXQYoVe7TV6pEmw==/original/archive?token=S4DE0M9p3SVR66BD-2KT1Q%3D%3D
+
+==========================
+>>file check and restore db
+===========================
+file cytosurge.sql.gz >>>>Check file extension
+cat db.gz | gzip -d | psql -x -d ningbo_695752 Restore db in gzip format
+pg_restore -U aina_703445  < testaina_2017.dump Restore db in dump file
+psql -l | grep hza >>> see all my database
+
+========================
+POSIX tar archive format
+========================
+createdb hudson_703571
+pg_restore -c -d hudson_703571 -v hvsl_db_dump.tar.gz
+
+
