@@ -9,7 +9,13 @@ file cytosurge.sql.gz >>>>Check file extension
 cat db.gz | gzip -d | psql -x -d ningbo_695752 Restore db in gzip format
 pg_restore -U aina_703445  < testaina_2017.dump Restore db in dump file
 psql -l | grep hza >>> see all my database
-
+pg_restore -U aina_703445  < testaina_2017.dump Restore db in dump file
+psql -l | grep hza >>> see all my databasepg_restore -U aina_703445  < testaina_2017.dump Restore db in dump file
+psql -l | grep hza >>> see all my databasepg_restore -U aina_703445  < testaina_2017.dump Restore db in dump file
+psql -l | grep hza >>> see all my databasepg_restore -U aina_703445  < testaina_2017.dump Restore db in dump file
+psql -l | grep hza >>> see all my databasepg_restore -U aina_703445  < testaina_2017.dump Restore db in dump file
+psql -l | grep hza >>> see all my databasepg_restore -U aina_703445  < testaina_2017.dump Restore db in dump file
+psql -l | grep hza >>> see all my database
 
 
 
